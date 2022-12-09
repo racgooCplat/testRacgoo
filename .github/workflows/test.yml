@@ -22,9 +22,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
-    uses: dkershner6/post-api-call-action@v1
-    with:
-      url: http://www.racgoo.o-r.kr:4000
+      uses: satak/webrequest-action@master
+      with:
+        url: http://www.racgoo.o-r.kr:4000
+        method: GET
+    
+    
       
     
